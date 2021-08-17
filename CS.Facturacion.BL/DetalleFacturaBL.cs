@@ -9,14 +9,14 @@ using CS.Facturacion.DAL;
 
 namespace CS.Facturacion.BL
 {
-    class FacturaBL
+    class DetalleFacturaBL
     {
-        public static List<Factura> ObtenerFactura()
+        public static List<DetalleFactura> ObtenerDetalleFactura()
         {
-            
+
             try
             {
-                return FacturaDAL.ObtenerFactura();
+                return DetalleFacturaDAL.ObtenerDetalleFactura();
             }
             catch (SqlException ex)
             {
@@ -36,13 +36,13 @@ namespace CS.Facturacion.BL
             }
         }
 
-        public static int AgregarFactura(Factura pFactura)
+        public static int AgregarDetalleFactura(DetalleFactura pDetalleFactura)
         {
-            
+
 
             try
             {
-                return FacturaBL.AgregarFactura(pFactura);
+                return DetalleFacturaDAL.AgregarDetalleFactura(pDetalleFactura);
             }
             catch (SqlException ex)
             {
